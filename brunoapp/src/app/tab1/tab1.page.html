@@ -6,13 +6,37 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home page</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1>Browse by category</h1>
 
+  <h2 class="ion-text-center">
+    <ion-button size="large">
+      <ion-icon name="car-Sport" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
+    </ion-button>
+    <ion-button size="large">
+      <ion-icon name="bicycle" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
+    </ion-button>
+    <ion-button size="large">
+      <ion-icon name="boat" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
+    </ion-button>
+    <ion-button size="large">
+      <ion-icon name="airplane" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
+    </ion-button>
+  </h2>
+  <h5 class="ion-text-center">
+    Popular detailing companies
+  </h5>
 
+  <ion-card>
+    <img alt="CompanyA" src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" />
+    <ion-card-header>
+      <ion-card-title>Detailing Company A</ion-card-title>
+      <ion-card-subtitle>Cars - SUVS - Motorcycles</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the company. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
   
 </ion-content>
