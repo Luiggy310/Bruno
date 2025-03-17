@@ -1,7 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
+      <ion-button size="small">
+        <img alt="Bruno Logo" height='40' width='40'
+        src="https://i.ibb.co/TMRpNwKF/Bruno-Logo.png" />
+      </ion-button>
       <ion-searchbar animated="true" placeholder="Search Jobs"></ion-searchbar>
+      <ion-button>
+        <ion-icon name="settings" size="large" aria-hidden="true" class="ion-padding" color="medium"></ion-icon>
+      </ion-button>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,34 +16,29 @@
 <ion-content [fullscreen]="true" class="ion-padding">
   <h1>Browse by category</h1>
 
-  <h2 class="ion-text-center">
+  <h2 class="ion-text-left">
     <ion-button size="large">
       <ion-icon name="car-Sport" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
     </ion-button>
+    Cars and SUVS
+  </h2>
+  <h2 class="ion-text-left">
     <ion-button size="large">
       <ion-icon name="bicycle" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
     </ion-button>
+    Motorbikes
+  </h2>
+  <h2 class="ion-text-left">
     <ion-button size="large">
       <ion-icon name="boat" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
     </ion-button>
+    Boats and water vehicles
+  </h2>
+  <h2 class="ion-text-left">
     <ion-button size="large">
       <ion-icon name="airplane" size="large" aria-hidden="true" class="ion-padding" color="secondary"></ion-icon>
     </ion-button>
+    Airplanes
   </h2>
-  <h5 class="ion-text-center">
-    Popular detailing companies
-  </h5>
-
-  <ion-card>
-    <img alt="CompanyA" src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" />
-    <ion-card-header>
-      <ion-card-title>Detailing Company A</ion-card-title>
-      <ion-card-subtitle>Cars - SUVS - Motorcycles</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the company. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
   
 </ion-content>
