@@ -1,99 +1,67 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
-    <ion-title>
+    <ion-title class="ion-text-center">
       <ion-button size="small">
-        <img alt="Bruno Logo" height='40' width='40'
+        <img alt="Bruno Logo" height='40' width='70'
         src="https://i.ibb.co/TMRpNwKF/Bruno-Logo.png" />
       </ion-button>
-      <ion-searchbar animated="true" placeholder="Search Jobs"></ion-searchbar>
-      <ion-button>
-        <ion-icon name="settings" size="large" aria-hidden="true" class="ion-padding" color="medium"></ion-icon>
-      </ion-button>
     </ion-title>
+      <ion-searchbar animated="true" placeholder="Search Jobs"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <ion-card color="primary">
-    <ion-card-header>
-      <ion-card-title>Gardening</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="secondary">
-    <ion-card-header>
-      <ion-card-title>Landscaping</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="tertiary">
-    <ion-card-header>
-      <ion-card-title>Window Washing</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="success">
-    <ion-card-header>
-      <ion-card-title>Carpet Cleaning</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="warning">
-    <ion-card-header>
-      <ion-card-title>Mobile Auto Detail</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="danger">
-    <ion-card-header>
-      <ion-card-title>Mobile Oil Changes</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="light">
-    <ion-card-header>
-      <ion-card-title>AC/Heating</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="medium">
-    <ion-card-header>
-      <ion-card-title>Plumbing</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
-  
-  <ion-card color="dark">
-    <ion-card-header>
-      <ion-card-title>Roofing</ion-card-title>
-      <ion-card-subtitle>Brief description of the services</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content> More content (Optional) </ion-card-content>
-  </ion-card>
+  <ion-list>
+    
+    <ion-item>
+      <ion-select label="Have you ever detailed your car?" placeholder="Q1">
+        <ion-select-option value="yes">Yes</ion-select-option>
+        <ion-select-option value="no">No</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="If you do, how you do it?" placeholder="Q2">
+        <ion-select-option value="dim">Do it myself</ion-select-option>
+        <ion-select-option value="pro">I hire a profesional</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Have you ever experienced difficulty on finding an auto detailer?" placeholder="Q3">
+        <ion-select-option value="yes">Yes</ion-select-option>
+        <ion-select-option value="no">No</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="What vehicle do you want do detail?" placeholder="Q4" [multiple]="true">
+        <ion-select-option value="car">Car</ion-select-option>
+        <ion-select-option value="suv">SUV</ion-select-option>
+        <ion-select-option value="bike">Motorbike</ion-select-option>
+        <ion-select-option value="boat">Boat</ion-select-option>
+        <ion-select-option value="plane">Airplane</ion-select-option>
+        <ion-select-option value="other">Other</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="How much do you expect to pay?" placeholder="Q5">
+        <ion-select-option value="1">Less than $100</ion-select-option>
+        <ion-select-option value="2">$101 - $200</ion-select-option>
+        <ion-select-option value="3">$201 - $500</ion-select-option>
+        <ion-select-option value="4">$501 - $1000</ion-select-option>
+        <ion-select-option value="5">More than $1001</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+  </ion-list>
+
+  <ion-title class="ion-text-center">
+    <ion-button size="small">
+      Submit
+    </ion-button>
+  </ion-title>
   
 </ion-content>
